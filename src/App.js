@@ -1,4 +1,5 @@
-import { Box, Container, Link, Stack, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+import Navbar from "./routes/navbar/navbar.component";
 
 // https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
 
@@ -10,13 +11,7 @@ function App() {
           py: 2,
         }}
       >
-        <Stack direction={"row"} spacing={3}>
-          <Link href="#home">Home Page</Link>
-          <Link href="#about-me">About Me</Link>
-          <Link href="#timeline">Timeline</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#email">Email</Link>
-        </Stack>
+        <Navbar />
       </Box>
       <Box>
         <Box id="about-me">
@@ -46,7 +41,7 @@ function App() {
           </Typography>
         </Box>
         <Box id="timeline">
-          <Typography variant="h2">Timeline</Typography>
+          <Typography variant="h2">Professional Journey</Typography>
           <Typography variant="body1">
             Aliquam ornare, odio id varius facilisis, tortor lectus bibendum
             lorem, vitae pulvinar velit ex sit amet risus. Etiam fringilla
@@ -97,8 +92,25 @@ function App() {
             laoreet sed.
           </Typography>
         </Box>
-        <Box id="email">
-          <Typography variant="h2">Email</Typography>
+        <Box id="cv">
+          <Typography variant="h2">Resume</Typography>
+          <Typography variant="body1">
+            Aconsectetur dui id risus congue pulvinar. Nam ultricies euismod
+            interdum. Maecenas accumsan elit et nibh dignissim, sit amet
+            accumsan tellus maximus. Fusce vitae vulputate orci, sed efficitur
+            odio. Aenean odio ante, tristique ut aliquam quis, bibendum a velit.
+            Phasellus vitae mollis quam. Donec rutrum leo sed lectus ornare
+            pretium. Duis ultricies ut sem sed finibus. Nullam nec faucibus
+            purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia curae; Etiam sed viverra quam. Aliquam
+            scelerisque accumsan pellentesque. Aliquam porttitor nulla felis,
+            quis ultrices ante egestas ac. Nulla sed laoreet ante. Duis viverra
+            mattis ornare. Ut placerat porttitor enim, sit amet lobortis eros
+            laoreet sed.
+          </Typography>
+        </Box>
+        <Box id="contact-form">
+          <Typography variant="h2">Contact Me</Typography>
           <Typography variant="body1">
             Aliquam ornare, odio id varius facilisis, tortor lectus bibendum
             lorem, vitae pulvinar velit ex sit amet risus. Etiam fringilla

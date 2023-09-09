@@ -12,11 +12,9 @@ import {
   ListItemText,
   Stack,
   Toolbar,
-  Typography,
 } from "@mui/material";
 import FilterVintageTwoToneIcon from "@mui/icons-material/FilterVintageTwoTone";
 import MenuIcon from "@mui/icons-material/Menu";
-import { ImportContacts } from "@mui/icons-material";
 import React, { Fragment } from "react";
 
 const drawerWidth = 240;
@@ -32,7 +30,7 @@ const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    setDrawerOpen(() => !drawerOpen);
+    setDrawerOpen((drawerOpen) => !drawerOpen);
   };
 
   const drawerInside = (

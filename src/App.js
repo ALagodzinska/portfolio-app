@@ -1,7 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import Navbar from "./routes/navbar/navbar.component";
-
-// https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
+import AboutMe from "./routes/about-me/about-me.component";
 
 function App() {
   return (
@@ -14,31 +13,8 @@ function App() {
         <Navbar />
       </Box>
       <Box>
-        <Box id="about-me">
-          <Typography variant="h2">About Me</Typography>
-          <Typography variant="body1">
-            Aliquam ornare, odio id varius facilisis, tortor lectus bibendum
-            lorem, vitae pulvinar velit ex sit amet risus. Etiam fringilla
-            lectus mi, eget faucibus quam commodo ac. Praesent tincidunt
-            hendrerit leo quis tempus. Pellentesque sed commodo dui. Fusce sit
-            amet turpis ac justo efficitur tincidunt vel vel arcu. Curabitur id
-            libero orci. Maecenas a quam velit. Fusce pulvinar molestie laoreet.
-            Nulla auctor aliquam nisl, bibendum pellentesque sapien consectetur
-            vitae. Proin consectetur rutrum est ut pharetra. Nulla lectus
-            turpis, scelerisque id ex eget, tempus consectetur tortor. Mauris
-            consectetur dui id risus congue pulvinar. Nam ultricies euismod
-            interdum. Maecenas accumsan elit et nibh dignissim, sit amet
-            accumsan tellus maximus. Fusce vitae vulputate orci, sed efficitur
-            odio. Aenean odio ante, tristique ut aliquam quis, bibendum a velit.
-            Phasellus vitae mollis quam. Donec rutrum leo sed lectus ornare
-            pretium. Duis ultricies ut sem sed finibus. Nullam nec faucibus
-            purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae; Etiam sed viverra quam. Aliquam
-            scelerisque accumsan pellentesque. Aliquam porttitor nulla felis,
-            quis ultrices ante egestas ac. Nulla sed laoreet ante. Duis viverra
-            mattis ornare. Ut placerat porttitor enim, sit amet lobortis eros
-            laoreet sed.
-          </Typography>
+        <Box id="about-me" sx={{ py: 5 }}>
+          <AboutMe />
         </Box>
         <Box id="timeline">
           <Typography variant="h2">Professional Journey</Typography>

@@ -1,6 +1,20 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Fragment } from "react";
 import MyPhoto from "../../pictures/portfolio-pic.png";
+import {
+  CsharpIcon,
+  JavaScriptIcon,
+  HtmlIcon,
+  CssIcon,
+  SqlIcon,
+  DotNetIcon,
+  ReactIcon,
+  VSCodeIcon,
+  VSIcon,
+  GitIcon,
+  NpmIcon,
+  AzureIcon,
+} from "../../icons/icons";
 
 const AboutMe = () => {
   return (

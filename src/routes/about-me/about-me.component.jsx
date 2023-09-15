@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Fragment } from "react";
 import MyPhoto from "../../pictures/portfolio-pic.png";
 import {
@@ -18,49 +18,84 @@ import {
 
 const AboutMe = () => {
   return (
-    <Fragment>
-      <Typography variant="h2" align="center" sx={{ py: 3 }}>
-        ABOUT ME
-      </Typography>
+    <Box sx={{ pt: "160px", pb: "120px" }}>
       <Box>
         <Typography variant="h6" align="center">
-          Nice to meet you!
-        </Typography>
-        <Typography variant="h6" align="center">
-          My Name is ANASTASIJA LAGODZINSKA!
+          My name is Anastasija Lagodzinska
         </Typography>
         <Typography variant="body2" align="center" sx={{ pb: 2 }}>
-          JUNIOR SOFTWARE DEVELOPER
+          SOFTWARE DEVELOPER
         </Typography>
       </Box>
       <Grid
         container
         direction="row"
         justifyContent="center"
-        alignItems="center"
+        sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
-        <Grid item xs={3} sx={{ px: 2 }}>
+        <Grid item md={6} sx={{ px: 2 }}>
           <img src={MyPhoto} alt="Me" width={"100%"} height={"auto"} />
         </Grid>
-        <Grid item xs={5} md={4}>
-          <Typography fontSize={"1.5vw"} sx={{ pb: 2 }}>
+        <Grid item md={6}>
+          <Typography fontSize={"20px"} sx={{ pb: 2 }}>
             My journey into the world of software development began
             independently by learning online with a hunger for knowledge and a
             love for a good challenge.
           </Typography>
-          <Typography fontSize={"1.5vw"} sx={{ pb: 2 }}>
+          <Typography fontSize={"20px"} sx={{ pb: 2 }}>
             I'm dedicated to continuous learning, always seeking new
             possibilities to expand my skills. I love the opportunity to solve
             puzzles and find efficient, creative solutions to real-world
             problems.
           </Typography>
-          <Typography fontSize={"1.5vw"}>
+          <Typography fontSize={"20px"}>
             Feel free to explore my portfolio and see how my passion for coding
             comes to life through my projects.
           </Typography>
         </Grid>
       </Grid>
-    </Fragment>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
+      >
+        <Grid item xs="auto">
+          <Stack direction="row" spacing={2} justifyContent={"flex-end"}>
+            <Typography variant="overline">Programming Languages:</Typography>
+            <Stack direction={"row"} spacing={1}>
+              <CsharpIcon />
+              <JavaScriptIcon />
+              <HtmlIcon />
+              <CssIcon />
+              <SqlIcon />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs="auto">
+          <Stack direction={"row"} spacing={2}>
+            <Typography variant="overline">Tools:</Typography>
+            <Stack direction={"row"} spacing={1}>
+              <VSCodeIcon />
+              <VSIcon />
+              <GitIcon />
+              <NpmIcon />
+              <AzureIcon />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12}>
+          <Stack direction={"row"} spacing={2} justifyContent={"center"}>
+            <Typography variant="overline">Frameworks:</Typography>
+            <Stack direction={"row"} spacing={1}>
+              <DotNetIcon />
+              <ReactIcon />
+            </Stack>
+          </Stack>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

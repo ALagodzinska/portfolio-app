@@ -13,7 +13,7 @@ function App() {
         <Navbar />
       </Box>
       <Box>
-        <Box id="about-me" sx={{ py: 5 }}>
+        <Box id="about-me">
           <AboutMe />
         </Box>
         <Box id="timeline">

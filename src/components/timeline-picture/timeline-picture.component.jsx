@@ -19,7 +19,6 @@ const TimelinePicture = ({ imgSrc }) => {
         style={{
           border: "1px solid black",
           borderRadius: "100px",
-          boxShadow: "0px 0px 4px 1px #000000",
         }}
         height={"auto"}
       />

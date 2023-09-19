@@ -1,4 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import {
+  Box,
+  Link,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -6,15 +14,14 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
 import RtuLogo from "../../pictures/rtu-logo.png";
+import SelfLearningPicture from "../../pictures/self-learning.png";
+import TimelinePicture from "../../components/timeline-picture/timeline-picture.component";
+import FilterVintageRoundedIcon from "@mui/icons-material/FilterVintageRounded";
 
 const TimelineJourney = () => {
   return (
-    <Box sx={{ pt: "160px", pb: "120px" }}>
+    <Box sx={{ pt: "130px", pb: "120px" }}>
       <Typography variant="h2" align="center" sx={{ py: 3 }}>
         PROFESSIONAL JOURNEY
       </Typography>
@@ -23,44 +30,54 @@ const TimelineJourney = () => {
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
-              align="right"
               variant="body2"
               color="text.secondary"
             >
-              <Box
-                sx={{
-                  width: "150px",
-                  height: "150px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={RtuLogo}
-                  alt="RTU"
-                  width={"100%"}
-                  style={{
-                    border: "1px solid black",
-                    borderRadius: "100px",
-                    boxShadow: "0px 0px 4px 1px #000000",
-                  }}
-                  height={"auto"}
-                />
-              </Box>
+              <TimelinePicture imgSrc={SelfLearningPicture} />
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <FastfoodIcon />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineDot color="secondary">
+                <FilterVintageRoundedIcon />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                Eat
+                Self-learning
               </Typography>
-              <Typography>Because you need strength</Typography>
+              <Typography>
+                I am actively enhancing my programming skills through online
+                courses and hands-on project creation.
+              </Typography>
+              <Typography align="center">Courses</Typography>
+              <Typography fontSize={12}>
+                SQL Course - University of Waterloo
+              </Typography>
+              <Typography fontSize={12}>
+                The Complete Javascript course - Udemy
+              </Typography>
+              <Typography fontSize={12}>
+                Complete React Developer - Udemy
+              </Typography>
+              <Typography align="center">Projects</Typography>
+              <List sx={{ py: 0 }}>
+                <ListItem sx={{ py: 0 }}>
+                  <Link href="https://stacy-clothing.netlify.app/">
+                    <ListItemText primary="Crown Clothing Website" />
+                  </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                  <Link href="https://forkify-recipes-stacy.netlify.app/">
+                    <ListItemText primary="Forkify Recipe App" />
+                  </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                  <Link href="https://alagodzinska.github.io/MaptyApp/">
+                    <ListItemText primary="Mapty Workouts Tracking App" />
+                  </Link>
+                </ListItem>
+              </List>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -72,11 +89,11 @@ const TimelineJourney = () => {
               10:00 am
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color="primary">
-                <LaptopMacIcon />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineDot color="secondary">
+                <FilterVintageRoundedIcon />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
@@ -87,9 +104,9 @@ const TimelineJourney = () => {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color="primary" variant="outlined">
-                <HotelIcon />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineDot color="secondary">
+                <FilterVintageRoundedIcon />
               </TimelineDot>
               <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
             </TimelineSeparator>
@@ -104,9 +121,9 @@ const TimelineJourney = () => {
             <TimelineSeparator>
               <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
               <TimelineDot color="secondary">
-                <RepeatIcon />
+                <FilterVintageRoundedIcon />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">

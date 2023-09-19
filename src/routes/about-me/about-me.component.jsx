@@ -18,7 +18,7 @@ import {
 
 const AboutMe = () => {
   return (
-    <Box sx={{ pt: "160px" }}>
+    <Box sx={{ pt: "130px" }}>
       <Box>
         <Typography variant="h6" align="center">
           My name is Anastasija Lagodzinska

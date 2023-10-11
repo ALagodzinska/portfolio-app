@@ -32,7 +32,11 @@ const TimelineJourney = () => {
       <Typography variant="h2" align="center" sx={{ py: 5 }}>
         PROFESSIONAL JOURNEY
       </Typography>
-      <Box>
+      <Box
+        direction="row"
+        justifyContent="center"
+        sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
+      >
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineOppositeContent
@@ -233,15 +237,36 @@ const TimelineJourney = () => {
               <Typography variant="h6" component="span">
                 Accenture .NET Bootcamp
               </Typography>
-              <Typography>
-                With this Bootcamp I delved into advanced C# programming and
-                gained proficiency in utilizing Entity Framework to interact
-                with databases, grasped the fundamentals of APIs and expanded my
-                knowledge of web application development. I collaborated on a
-                group project. Together, we designed and developed a Real-Time
-                Chat Application using C#, MVC, and SignalR. Subsequently, we
-                successfully deployed the project to the Azure Cloud platform.
+              <br />
+              <Typography variant="body2" component="span">
+                Accenture
               </Typography>
+              <Typography>
+                In this Bootcamp, I advanced my C# programming skills, mastered
+                Entity Framework for database interaction, explored APIs, and
+                deepened my understanding of web application development. I
+                collaborated on a Real-Time Chat Application project using C#,
+                MVC, and SignalR, successfully deploying it to Azure Cloud.
+              </Typography>
+              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
+                Projects
+              </Typography>
+              <List sx={{ py: 0 }}>
+                <ListItem
+                  sx={{ py: 0 }}
+                  secondaryAction={
+                    <IconButton
+                      edge="end"
+                      aria-label="github"
+                      href="https://github.com/ALagodzinska/ChatApp"
+                    >
+                      <GitHubIcon />
+                    </IconButton>
+                  }
+                >
+                  <ListItemText primary="Hermes Chat App" />
+                </ListItem>
+              </List>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -263,7 +288,36 @@ const TimelineJourney = () => {
               <Typography variant="h6" component="span">
                 SHE GOES TECH Bootcamp
               </Typography>
-              <Typography>Because this is the life you love!</Typography>
+              <br />
+              <Typography variant="body2" component="span">
+                SHE GOES TECH
+              </Typography>
+              <Typography>
+                During the Bootcamp, I was introduced to the fundamentals of
+                programming, gained proficiency in C#, and gained insights into
+                JavaScript, HTML, and CSS. I had the opportunity to create
+                various console applications and developed a web application
+                using the MVC pattern.
+              </Typography>
+              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
+                Projects
+              </Typography>
+              <List sx={{ py: 0 }}>
+                <ListItem
+                  sx={{ py: 0 }}
+                  secondaryAction={
+                    <IconButton
+                      edge="end"
+                      aria-label="github"
+                      href="https://github.com/ALagodzinska/StudentsAttendanceManagementApp"
+                    >
+                      <GitHubIcon />
+                    </IconButton>
+                  }
+                >
+                  <ListItemText primary="Attendance Management Application" />
+                </ListItem>
+              </List>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -285,7 +339,16 @@ const TimelineJourney = () => {
               <Typography variant="h6" component="span">
                 Bachelor's in Business Administration and Management
               </Typography>
-              <Typography>Because you need rest</Typography>
+              <br />
+              <Typography variant="body2" component="span">
+                Riga Technical University
+              </Typography>
+              <Typography>
+                I have a Bachelor's degree in Business Administration. My thesis
+                was about finding better ways for small businesses to plan their
+                marketing. This education gave me a strong base in business
+                management and practical knowledge about finance and marketing.
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>

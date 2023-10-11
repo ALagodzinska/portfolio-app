@@ -1,8 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import Navbar from "./routes/navbar/navbar.component";
 import AboutMe from "./routes/about-me/about-me.component";
-import TimelineJourney from "./routes/timeline/timeline";
+import TimelineJourney from "./routes/timeline/timeline.component";
 import Projects from "./routes/projects/projects.component";
+import Resume from "./routes/resume/resume.component";
 
 function App() {
   return (
@@ -25,21 +26,7 @@ function App() {
           <Projects />
         </Box>
         <Box id="cv">
-          <Typography variant="h2">Resume</Typography>
-          <Typography variant="body1">
-            Aconsectetur dui id risus congue pulvinar. Nam ultricies euismod
-            interdum. Maecenas accumsan elit et nibh dignissim, sit amet
-            accumsan tellus maximus. Fusce vitae vulputate orci, sed efficitur
-            odio. Aenean odio ante, tristique ut aliquam quis, bibendum a velit.
-            Phasellus vitae mollis quam. Donec rutrum leo sed lectus ornare
-            pretium. Duis ultricies ut sem sed finibus. Nullam nec faucibus
-            purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae; Etiam sed viverra quam. Aliquam
-            scelerisque accumsan pellentesque. Aliquam porttitor nulla felis,
-            quis ultrices ante egestas ac. Nulla sed laoreet ante. Duis viverra
-            mattis ornare. Ut placerat porttitor enim, sit amet lobortis eros
-            laoreet sed.
-          </Typography>
+          <Resume />
         </Box>
         <Box id="contact-form">
           <Typography variant="h2">Contact Me</Typography>

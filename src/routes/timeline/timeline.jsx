@@ -149,7 +149,7 @@ const TimelineJourney = () => {
                     </Fragment>
                   }
                 >
-                  <ListItemText primary="Mapty Workouts Tracking App" />
+                  <ListItemText primary="Mapty Workouts Tracking" />
                 </ListItem>
               </List>
             </TimelineContent>

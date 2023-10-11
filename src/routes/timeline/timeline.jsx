@@ -1,30 +1,28 @@
-import {
-  Box,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from "@mui/material";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import RtuLogo from "../../pictures/rtu-logo.png";
-import SheGoesTechIcon from "../../pictures/sgt-logo.jpg";
-import AccentureBootcampIcon from "../../pictures/accenture-bootcamp-logo.jpg";
-import AccentureIcon from "../../pictures/accenture-logo.jpg";
-import SelfLearningPicture from "../../pictures/self-learning.png";
-import TimelinePicture from "../../components/timeline-picture/timeline-picture.component";
 import FilterVintageRoundedIcon from "@mui/icons-material/FilterVintageRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
+import Timeline from "@mui/lab/Timeline";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import {
+  Box,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import { Fragment } from "react";
+import TimelinePicture from "../../components/timeline-picture/timeline-picture.component";
+import AccentureBootcampIcon from "../../pictures/accenture-bootcamp-logo.jpg";
+import AccentureIcon from "../../pictures/accenture-logo.jpg";
+import RtuLogo from "../../pictures/rtu-logo.png";
+import SelfLearningPicture from "../../pictures/self-learning.png";
+import SheGoesTechIcon from "../../pictures/sgt-logo.jpg";
 
 const TimelineJourney = () => {
   return (
@@ -39,12 +37,11 @@ const TimelineJourney = () => {
       >
         <Timeline position="alternate">
           <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              variant="body2"
-              color="text.secondary"
-            >
-              <TimelinePicture imgSrc={SelfLearningPicture} />
+            <TimelineOppositeContent variant="body2" color="text.secondary">
+              <TimelinePicture
+                imgSrc={SelfLearningPicture}
+                alt="selfLearning"
+              />
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -160,7 +157,11 @@ const TimelineJourney = () => {
               variant="body2"
               color="text.secondary"
             >
-              <TimelinePicture imgSrc={AccentureIcon} />
+              <TimelinePicture
+                imgSrc={AccentureIcon}
+                alt="accenture"
+                direction="right"
+              />
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -224,7 +225,7 @@ const TimelineJourney = () => {
               variant="body2"
               color="text.secondary"
             >
-              <TimelinePicture imgSrc={AccentureBootcampIcon} />
+              <TimelinePicture imgSrc={AccentureBootcampIcon} alt="bootcamp" />
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -275,7 +276,11 @@ const TimelineJourney = () => {
               variant="body2"
               color="text.secondary"
             >
-              <TimelinePicture imgSrc={SheGoesTechIcon} />
+              <TimelinePicture
+                imgSrc={SheGoesTechIcon}
+                alt="sheGoesTech"
+                direction="right"
+              />
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -326,7 +331,7 @@ const TimelineJourney = () => {
               variant="body2"
               color="text.secondary"
             >
-              <TimelinePicture imgSrc={RtuLogo} />
+              <TimelinePicture imgSrc={RtuLogo} alt="rtu" />
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />

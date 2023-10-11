@@ -1,7 +1,7 @@
-import * as React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 import {
   Box,
-  Button,
   Card,
   CardActionArea,
   CardActions,
@@ -11,13 +11,12 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import * as React from "react";
 import CrwnClothing from "../../pictures/cwn-clothing.png";
-import HermesChat from "../../pictures/hermesChat.png";
-import Mapty from "../../pictures/mapty.jpg";
 import Forkify from "../../pictures/forkify.jpg";
 import GameOfLife from "../../pictures/gameOfLife.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
+import HermesChat from "../../pictures/hermesChat.png";
+import Mapty from "../../pictures/mapty.jpg";
 
 const Projects = () => {
   return (
@@ -32,7 +31,9 @@ const Projects = () => {
       >
         <Grid container spacing={2}>
           <Grid item xs={6} md={4}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+            >
               <CardActionArea>
                 <CardMedia
                   sx={{ height: 140 }}
@@ -54,12 +55,18 @@ const Projects = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions
+                sx={{
+                  flexGrow: 1,
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                  paddingRight: "20px",
+                }}
+              >
                 <IconButton
                   edge="end"
                   aria-label="github"
                   href="https://stacy-clothing.netlify.app/"
-                  sx={{ mr: 0.5 }}
                 >
                   <LanguageIcon />
                 </IconButton>
@@ -74,7 +81,9 @@ const Projects = () => {
             </Card>
           </Grid>
           <Grid item xs={6} md={4}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+            >
               <CardMedia
                 sx={{ height: 140 }}
                 image={HermesChat}
@@ -95,7 +104,14 @@ const Projects = () => {
                   C#,.NET, JavaScript, SignalR, Azure SQL DB
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
+                sx={{
+                  flexGrow: 1,
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                  paddingRight: "20px",
+                }}
+              >
                 <IconButton
                   edge="end"
                   aria-label="github"
@@ -107,7 +123,13 @@ const Projects = () => {
             </Card>
           </Grid>
           <Grid item xs={6} md={4}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <CardMedia
                 sx={{ height: 140 }}
                 image={GameOfLife}
@@ -127,7 +149,14 @@ const Projects = () => {
                   C#, Console Application, Json
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
+                sx={{
+                  flexGrow: 1,
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                  paddingRight: "20px",
+                }}
+              >
                 <IconButton
                   edge="end"
                   aria-label="github"
@@ -139,7 +168,7 @@ const Projects = () => {
             </Card>
           </Grid>
           <Grid item xs={6} md={6}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ height: "100%" }}>
               <CardMedia
                 sx={{ height: 140 }}
                 image={Forkify}
@@ -160,12 +189,18 @@ const Projects = () => {
                   JavaScript, Scss, Babel, Forkify API
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
+                sx={{
+                  flexGrow: 1,
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                  paddingRight: "20px",
+                }}
+              >
                 <IconButton
                   edge="end"
                   aria-label="github"
                   href="https://forkify-recipes-stacy.netlify.app/"
-                  sx={{ mr: 0.5 }}
                 >
                   <LanguageIcon />
                 </IconButton>
@@ -180,7 +215,9 @@ const Projects = () => {
             </Card>
           </Grid>
           <Grid item xs={6} md={6}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+            >
               <CardMedia sx={{ height: 140 }} image={Mapty} title="Mapty App" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -197,12 +234,18 @@ const Projects = () => {
                   JavaScript, leaflet, open-meteo API
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
+                sx={{
+                  flexGrow: 1,
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                  paddingRight: "20px",
+                }}
+              >
                 <IconButton
                   edge="end"
                   aria-label="github"
                   href="https://alagodzinska.github.io/MaptyApp/"
-                  sx={{ mr: 0.5 }}
                 >
                   <LanguageIcon />
                 </IconButton>

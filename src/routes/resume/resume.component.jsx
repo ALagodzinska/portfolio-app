@@ -5,8 +5,8 @@ import ResumeFile from "../../resume-file/Lagodzinska_Resume.pdf";
 const Resume = () => {
   const onDownload = () => {
     const link = document.createElement("a");
+    link.href = ResumeFile;
     link.download = "resume.pdf";
-    link.href = { ResumeFile };
     link.click();
   };
 
@@ -17,7 +17,7 @@ const Resume = () => {
       </Typography>
       <Box
         direction="row"
-        justifyContent="center"
+        justifyContent={"center"}
         sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
         <Button
@@ -30,6 +30,8 @@ const Resume = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            mx: "20%",
+            height: "4rem",
           }}
         >
           DOWNLOAD RESUME

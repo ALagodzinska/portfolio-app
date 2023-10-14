@@ -4,6 +4,7 @@ import AboutMe from "./routes/about-me/about-me.component";
 import TimelineJourney from "./routes/timeline/timeline.component";
 import Projects from "./routes/projects/projects.component";
 import Resume from "./routes/resume/resume.component";
+import ContactMe from "./routes/contact-me/contact-me.component";
 
 function App() {
   return (
@@ -29,30 +30,7 @@ function App() {
           <Resume />
         </Box>
         <Box id="contact-form">
-          <Typography variant="h2">Contact Me</Typography>
-          <Typography variant="body1">
-            Aliquam ornare, odio id varius facilisis, tortor lectus bibendum
-            lorem, vitae pulvinar velit ex sit amet risus. Etiam fringilla
-            lectus mi, eget faucibus quam commodo ac. Praesent tincidunt
-            hendrerit leo quis tempus. Pellentesque sed commodo dui. Fusce sit
-            amet turpis ac justo efficitur tincidunt vel vel arcu. Curabitur id
-            libero orci. Maecenas a quam velit. Fusce pulvinar molestie laoreet.
-            Nulla auctor aliquam nisl, bibendum pellentesque sapien consectetur
-            vitae. Proin consectetur rutrum est ut pharetra. Nulla lectus
-            turpis, scelerisque id ex eget, tempus consectetur tortor. Mauris
-            consectetur dui id risus congue pulvinar. Nam ultricies euismod
-            interdum. Maecenas accumsan elit et nibh dignissim, sit amet
-            accumsan tellus maximus. Fusce vitae vulputate orci, sed efficitur
-            odio. Aenean odio ante, tristique ut aliquam quis, bibendum a velit.
-            Phasellus vitae mollis quam. Donec rutrum leo sed lectus ornare
-            pretium. Duis ultricies ut sem sed finibus. Nullam nec faucibus
-            purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae; Etiam sed viverra quam. Aliquam
-            scelerisque accumsan pellentesque. Aliquam porttitor nulla felis,
-            quis ultrices ante egestas ac. Nulla sed laoreet ante. Duis viverra
-            mattis ornare. Ut placerat porttitor enim, sit amet lobortis eros
-            laoreet sed.
-          </Typography>
+          <ContactMe />
         </Box>
       </Box>
       <Box>Footer</Box>

@@ -20,7 +20,7 @@ import Mapty from "../../pictures/mapty.jpg";
 
 const Projects = () => {
   return (
-    <Box sx={{ pt: "130px", pb: "120px" }}>
+    <Box sx={{ pt: "130px" }}>
       <Typography variant="h2" align="center" sx={{ py: 5 }}>
         PROJECTS
       </Typography>

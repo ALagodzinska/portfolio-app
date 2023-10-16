@@ -36,7 +36,7 @@ const Navbar = () => {
   const drawerInside = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Box sx={{ py: 1.5 }}>
-        <FilterVintageTwoToneIcon />
+        <FilterVintageTwoToneIcon color={"secondary"} />
       </Box>
       <Divider />
       <List>
@@ -64,16 +64,15 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-
           <Link href="#home" color={"primary.contrastText"}>
             <FilterVintageTwoToneIcon
               sx={{
                 display: { xs: "none", md: "block" },
                 cursor: "pointer",
               }}
+              color={"secondary"}
             />
           </Link>
-
           <Stack
             sx={{
               display: { xs: "none", md: "flex" },
@@ -90,7 +89,6 @@ const Navbar = () => {
           </Stack>
         </Toolbar>
       </AppBar>
-
       <Drawer
         variant="temporary"
         open={drawerOpen}

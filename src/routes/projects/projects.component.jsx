@@ -3,7 +3,6 @@ import LanguageIcon from "@mui/icons-material/Language";
 import {
   Box,
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
@@ -32,29 +31,34 @@ const Projects = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} md={4}>
             <Card
-              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                ":hover": {
+                  boxShadow: 20,
+                },
+              }}
             >
-              <CardActionArea>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={CrwnClothing}
-                  title="CRWN clothing"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Clothing Website
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Clothing store website created using React and Redux.
-                  </Typography>
-                  <Typography
-                    sx={{ fontSize: "65%", pt: 1 }}
-                    color="text.secondary"
-                  >
-                    TypeScript, JavaScript, React, Redux, Stripe, Firebase
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <CardMedia
+                sx={{ height: 140 }}
+                image={CrwnClothing}
+                title="CRWN clothing"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Clothing Website
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Clothing store website created using React and Redux.
+                </Typography>
+                <Typography
+                  sx={{ fontSize: "65%", pt: 1 }}
+                  color="text.secondary"
+                >
+                  TypeScript, JavaScript, React, Redux, Stripe, Firebase
+                </Typography>
+              </CardContent>
               <CardActions
                 sx={{
                   flexGrow: 1,
@@ -82,7 +86,14 @@ const Projects = () => {
           </Grid>
           <Grid item xs={6} md={4}>
             <Card
-              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                ":hover": {
+                  boxShadow: 20,
+                },
+              }}
             >
               <CardMedia
                 sx={{ height: 140 }}
@@ -128,6 +139,9 @@ const Projects = () => {
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
+                ":hover": {
+                  boxShadow: 20,
+                },
               }}
             >
               <CardMedia
@@ -168,7 +182,16 @@ const Projects = () => {
             </Card>
           </Grid>
           <Grid item xs={6} md={6}>
-            <Card sx={{ height: "100%" }}>
+            <Card
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                ":hover": {
+                  boxShadow: 20,
+                },
+              }}
+            >
               <CardMedia
                 sx={{ height: 140 }}
                 image={Forkify}
@@ -216,7 +239,14 @@ const Projects = () => {
           </Grid>
           <Grid item xs={6} md={6}>
             <Card
-              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                ":hover": {
+                  boxShadow: 20,
+                },
+              }}
             >
               <CardMedia sx={{ height: 140 }} image={Mapty} title="Mapty App" />
               <CardContent>

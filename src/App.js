@@ -33,7 +33,9 @@ function App() {
           <ContactMe />
         </Box>
       </Box>
-      <Box>Footer</Box>
+      <Box sx={{ borderTop: "solid 1px gray", py: 2, pl: 1 }}>
+        ⓒ 2023, Anastasija Lagodzinska
+      </Box>
     </Container>
   );
 }

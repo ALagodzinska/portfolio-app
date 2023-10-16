@@ -1,4 +1,7 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Typography } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactMe = () => {
   return (
@@ -18,25 +21,49 @@ const ContactMe = () => {
           Get in touch today and let's start building something amazing
           together!
         </Typography>
-        <Box sx={{ maxWidth: "300px" }}>
+        <Box
+          sx={{
+            pt: 2,
+            width: "320px",
+            margin: "0 auto",
+          }}
+        >
           <Grid container>
-            <Grid item xs={10}>
+            <Grid item xs={10} pt={1}>
               a.lagodzinska@outlook.com
             </Grid>
             <Grid item xs={2}>
-              copy
+              <IconButton
+                edge="end"
+                aria-label="email"
+                href="mailto:alagodzinska@outlook.com"
+              >
+                <EmailIcon />
+              </IconButton>
             </Grid>
-            <Grid item xs={10}>
+            <Grid item xs={10} pt={1}>
               Anastasija Lagodzinska
             </Grid>
             <Grid item xs={2}>
-              linkedin
+              <IconButton
+                edge="end"
+                aria-label="linkedin"
+                href="https://www.linkedin.com/in/anastasija-lagodzinska-251491136/"
+              >
+                <LinkedInIcon />
+              </IconButton>
             </Grid>
-            <Grid item xs={10}>
+            <Grid item xs={10} pt={1}>
               ALagodzinska
             </Grid>
             <Grid item xs={2}>
-              github
+              <IconButton
+                edge="end"
+                aria-label="github"
+                href="https://github.com/ALagodzinska"
+              >
+                <GitHubIcon />
+              </IconButton>
             </Grid>
           </Grid>
         </Box>

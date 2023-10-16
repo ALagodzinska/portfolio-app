@@ -38,7 +38,7 @@ const ContactMe = () => {
                 aria-label="email"
                 href="mailto:alagodzinska@outlook.com"
               >
-                <EmailIcon />
+                <EmailIcon color={"secondary"} />
               </IconButton>
             </Grid>
             <Grid item xs={10} pt={1}>
@@ -50,7 +50,7 @@ const ContactMe = () => {
                 aria-label="linkedin"
                 href="https://www.linkedin.com/in/anastasija-lagodzinska-251491136/"
               >
-                <LinkedInIcon />
+                <LinkedInIcon color={"secondary"} />
               </IconButton>
             </Grid>
             <Grid item xs={10} pt={1}>
@@ -62,7 +62,7 @@ const ContactMe = () => {
                 aria-label="github"
                 href="https://github.com/ALagodzinska"
               >
-                <GitHubIcon />
+                <GitHubIcon color={"secondary"} />
               </IconButton>
             </Grid>
           </Grid>

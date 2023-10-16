@@ -24,7 +24,7 @@ const Resume = () => {
           size="large"
           component="label"
           variant="contained"
-          startIcon={<FileDownloadIcon color={"secondary"} />}
+          startIcon={<FileDownloadIcon />}
           onClick={onDownload}
           sx={{
             display: "flex",
@@ -32,7 +32,10 @@ const Resume = () => {
             justifyContent: "center",
             mx: "20%",
             height: "4rem",
-            color: "secondary",
+            backgroundColor: "#1b5e20",
+            color: "white",
+            transition: "all 1s ease",
+            ":hover": { transform: "scale(1.2)" },
           }}
         >
           DOWNLOAD RESUME

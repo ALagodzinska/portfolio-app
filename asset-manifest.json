@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.d2063ede.css",
+    "main.css": "/portfolio-app/static/css/main.b4058c64.css",
     "main.js": "/portfolio-app/static/js/main.8bdfbeec.js",
     "static/media/portfolio-pic.png": "/portfolio-app/static/media/portfolio-pic.ecc27eaebb4fb1725697.png",
     "static/media/Lagodzinska_Resume.pdf": "/portfolio-app/static/media/Lagodzinska_Resume.45a7d8c73d6393583fd4.pdf",
@@ -70,11 +70,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio-app/index.html",
-    "main.d2063ede.css.map": "/portfolio-app/static/css/main.d2063ede.css.map",
+    "main.b4058c64.css.map": "/portfolio-app/static/css/main.b4058c64.css.map",
     "main.8bdfbeec.js.map": "/portfolio-app/static/js/main.8bdfbeec.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2063ede.css",
+    "static/css/main.b4058c64.css",
     "static/js/main.8bdfbeec.js"
   ]
 }

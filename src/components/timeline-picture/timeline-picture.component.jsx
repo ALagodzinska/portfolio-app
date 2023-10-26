@@ -1,8 +1,9 @@
 import { TimelineConnector } from "@mui/lab";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 const TimelinePicture = ({ imgSrc, alt, direction = "left" }) => {
-  console.log(imgSrc);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -23,15 +24,17 @@ const TimelinePicture = ({ imgSrc, alt, direction = "left" }) => {
         }}
         height={"auto"}
       />
-      <TimelineConnector
-        sx={{
-          position: "absolute",
-          width: "30%",
-          height: "2px",
-          zIndex: "-1",
-          [direction === "left" ? "left" : "right"]: "72%",
-        }}
-      />
+      {!isMobile && (
+        <TimelineConnector
+          sx={{
+            position: "absolute",
+            width: "30%",
+            height: "2px",
+            zIndex: "-1",
+            [direction === "left" ? "left" : "right"]: "72%",
+          }}
+        />
+      )}
     </Box>
   );
 };

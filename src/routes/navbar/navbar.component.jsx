@@ -16,6 +16,7 @@ import {
 import FilterVintageTwoToneIcon from "@mui/icons-material/FilterVintageTwoTone";
 import MenuIcon from "@mui/icons-material/Menu";
 import React, { Fragment } from "react";
+import FlowerIcon from "../../pictures/nature.png";
 
 const drawerWidth = 240;
 const navItems = [
@@ -64,14 +65,12 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Link href="#home" color={"primary.contrastText"}>
-            <FilterVintageTwoToneIcon
-              sx={{
-                display: { xs: "none", md: "block" },
-                cursor: "pointer",
-              }}
-              color={"secondary"}
-            />
+          <Link
+            href="#home"
+            color={"primary.contrastText"}
+            sx={{ display: { xs: "none", md: "flex" } }}
+          >
+            <img src={FlowerIcon} alt="flower" width="35" height="35" />
           </Link>
           <Stack
             sx={{

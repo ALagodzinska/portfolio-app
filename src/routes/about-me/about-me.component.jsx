@@ -18,7 +18,7 @@ import {
 
 const AboutMe = () => {
   return (
-    <Box sx={{ pt: "130px" }}>
+    <Box sx={{ pt: { xs: "40px", md: "130px" } }}>
       <Box>
         <Typography variant="h6" align="center">
           My name is Anastasija Lagodzinska
@@ -37,18 +37,24 @@ const AboutMe = () => {
           <img src={MyPhoto} alt="Me" width={"100%"} height={"auto"} />
         </Grid>
         <Grid item md={6}>
-          <Typography fontSize={"20px"} sx={{ pb: 2 }}>
+          <Typography
+            fontSize={{ xs: "16px", sm: "20px" }}
+            sx={{ pb: { xs: 1, sm: 2 } }}
+          >
             My journey into the world of software development began
             independently by learning online with a hunger for knowledge and a
             love for a good challenge.
           </Typography>
-          <Typography fontSize={"20px"} sx={{ pb: 2 }}>
+          <Typography
+            fontSize={{ xs: "16px", sm: "20px" }}
+            sx={{ pb: { xs: 1, sm: 2 } }}
+          >
             I'm dedicated to continuous learning, always seeking new
             possibilities to expand my skills. I love the opportunity to solve
             puzzles and find efficient, creative solutions to real-world
             problems.
           </Typography>
-          <Typography fontSize={"20px"}>
+          <Typography fontSize={{ xs: "16px", sm: "20px" }}>
             Feel free to explore my portfolio and see how my passion for coding
             comes to life through my projects.
           </Typography>
@@ -62,7 +68,11 @@ const AboutMe = () => {
         spacing={3}
       >
         <Grid item xs="auto">
-          <Stack direction="row" spacing={2} justifyContent={"flex-end"}>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 1, md: 2 }}
+            justifyContent={"flex-end"}
+          >
             <Typography variant="overline">Programming Languages:</Typography>
             <Stack direction={"row"} spacing={1}>
               <CsharpIcon />
@@ -74,8 +84,13 @@ const AboutMe = () => {
           </Stack>
         </Grid>
         <Grid item xs="auto">
-          <Stack direction={"row"} spacing={2}>
-            <Typography variant="overline">Tools:</Typography>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 1, md: 2 }}
+          >
+            <Typography variant="overline" align="center">
+              Tools:
+            </Typography>
             <Stack direction={"row"} spacing={1}>
               <VSCodeIcon />
               <VSIcon />
@@ -86,9 +101,15 @@ const AboutMe = () => {
           </Stack>
         </Grid>
         <Grid item xs={12}>
-          <Stack direction={"row"} spacing={2} justifyContent={"center"}>
-            <Typography variant="overline">Frameworks:</Typography>
-            <Stack direction={"row"} spacing={1}>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 1, md: 2 }}
+            justifyContent={"center"}
+          >
+            <Typography variant="overline" align="center">
+              Frameworks:
+            </Typography>
+            <Stack direction={"row"} spacing={1} justifyContent={"center"}>
               <DotNetIcon />
               <ReactIcon />
             </Stack>

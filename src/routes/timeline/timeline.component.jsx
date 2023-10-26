@@ -10,11 +10,15 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import {
   Box,
+  Divider,
   IconButton,
   List,
   ListItem,
   ListItemText,
   Typography,
+  unstable_createMuiStrictModeTheme,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Fragment } from "react";
 import TimelinePicture from "../../components/timeline-picture/timeline-picture.component";
@@ -25,9 +29,15 @@ import SelfLearningPicture from "../../pictures/self-learning.png";
 import SheGoesTechIcon from "../../pictures/sgt-logo.jpg";
 
 const TimelineJourney = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Box sx={{ pt: "130px" }}>
-      <Typography variant="h2" align="center" sx={{ py: 5 }}>
+    <Box sx={{ pt: { xs: "40px", md: "130px" } }}>
+      <Typography
+        // variant={{ xs: "h3", md: "h2" }}
+        align="center"
+        sx={{ py: 5, typography: { xs: "h3", md: "h2" } }}
+      >
         PROFESSIONAL JOURNEY
       </Typography>
       <Box
@@ -36,14 +46,18 @@ const TimelineJourney = () => {
         sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
         <Timeline position="alternate">
-          <TimelineItem>
-            <TimelineOppositeContent variant="body2" color="text.secondary">
+          <TimelineItem sx={isMobile ? { flexDirection: "column" } : {}}>
+            <TimelineOppositeContent
+              variant="body2"
+              color="text.secondary"
+              sx={isMobile ? { margin: "auto" } : {}}
+            >
               <TimelinePicture
                 imgSrc={SelfLearningPicture}
                 alt="selfLearning"
               />
             </TimelineOppositeContent>
-            <TimelineSeparator>
+            <TimelineSeparator sx={isMobile ? { display: "none" } : {}}>
               <TimelineConnector />
               <TimelineDot color="secondary">
                 <FilterVintageRoundedIcon />
@@ -51,14 +65,15 @@ const TimelineJourney = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography variant="h6" align="center" pb={1}>
                 Self-learning
               </Typography>
               <Typography>
                 I am actively enhancing my programming skills through online
                 courses and hands-on project creation.
               </Typography>
-              <Typography align="center" sx={{ fontWeight: "bold" }}>
+              <Divider sx={{ py: 1 }} />
+              <Typography align="center" sx={{ fontWeight: "bold", pt: 1.5 }}>
                 Courses
               </Typography>
               <List sx={{ py: 0 }}>
@@ -72,7 +87,7 @@ const TimelineJourney = () => {
                   <ListItemText primary="Complete React Developer - Udemy" />
                 </ListItem>
               </List>
-              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
+              <Typography align="center" sx={{ pt: 1.5, fontWeight: "bold" }}>
                 Projects
               </Typography>
               <List sx={{ py: 0 }}>

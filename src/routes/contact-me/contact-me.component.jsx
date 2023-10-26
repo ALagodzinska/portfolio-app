@@ -5,8 +5,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactMe = () => {
   return (
-    <Box sx={{ pt: "130px", pb: "120px" }}>
-      <Typography variant="h2" align="center" sx={{ py: 5 }}>
+    <Box
+      sx={{ pt: { xs: "40px", md: "130px" }, pb: { xs: "40px", md: "120px" } }}
+    >
+      <Typography
+        align="center"
+        sx={{ py: 5, typography: { xs: "h3", md: "h2" } }}
+      >
         CONTACT ME
       </Typography>
       <Box

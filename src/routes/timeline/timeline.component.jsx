@@ -16,7 +16,6 @@ import {
   ListItem,
   ListItemText,
   Typography,
-  unstable_createMuiStrictModeTheme,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -27,6 +26,68 @@ import AccentureIcon from "../../pictures/accenture-logo.jpg";
 import RtuLogo from "../../pictures/rtu-logo.png";
 import SelfLearningPicture from "../../pictures/self-learning.png";
 import SheGoesTechIcon from "../../pictures/sgt-logo.jpg";
+import CourseList from "../../components/timeline-item/course-list.component";
+import ProjectList from "../../components/timeline-item/project-list.component";
+import TimelineElement from "../../components/timeline-item/timeline-item.component";
+
+const courseList = [
+  "SQL Course - University of Waterloo",
+  "The Complete Javascript course - Udemy",
+  "Complete React Developer - Udemy",
+];
+
+const selfLearningProjectList = [
+  {
+    title: "Crown Clothing Website",
+    websiteLink: "https://stacy-clothing.netlify.app/",
+    githubLink: "https://github.com/ALagodzinska/Crown-Clothing",
+  },
+  {
+    title: "Forkify Recipe App",
+    websiteLink: "https://forkify-recipes-stacy.netlify.app/",
+    githubLink: "https://github.com/ALagodzinska/Forkify",
+  },
+  {
+    title: "Mapty Workouts Tracking",
+    websiteLink: "https://alagodzinska.github.io/MaptyApp/",
+    githubLink: "https://github.com/ALagodzinska/MaptyApp",
+  },
+];
+
+const accentureInternshipProjects = [
+  {
+    title: "Conways Game Of Life",
+    githubLink: "https://github.com/ALagodzinska/ConwaysGameOfLife",
+  },
+  {
+    title: "Savanna Game",
+    githubLink: "https://github.com/ALagodzinska/Savanna-Game",
+  },
+];
+
+const accentureBootcampProjects = [
+  {
+    title: "Hermes Chat App",
+    githubLink: "https://github.com/ALagodzinska/ChatApp",
+  },
+];
+
+const sheGoesTechProjects = [
+  {
+    title: "Attendance Management Application",
+    githubLink:
+      "https://github.com/ALagodzinska/StudentsAttendanceManagementApp",
+  },
+];
+
+const selfLearningItem = {
+  image: SelfLearningPicture,
+  title: "Self-learning",
+  description:
+    "I am actively enhancing my programming skills through online courses and hands-on project creation.",
+  courses: courseList,
+  projects: selfLearningProjectList,
+};
 
 const TimelineJourney = () => {
   const theme = useTheme();
@@ -34,7 +95,6 @@ const TimelineJourney = () => {
   return (
     <Box sx={{ pt: { xs: "40px", md: "130px" } }}>
       <Typography
-        // variant={{ xs: "h3", md: "h2" }}
         align="center"
         sx={{ py: 5, typography: { xs: "h3", md: "h2" } }}
       >
@@ -46,126 +106,7 @@ const TimelineJourney = () => {
         sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
         <Timeline position="alternate">
-          <TimelineItem sx={isMobile ? { flexDirection: "column" } : {}}>
-            <TimelineOppositeContent
-              variant="body2"
-              color="text.secondary"
-              sx={isMobile ? { margin: "auto" } : {}}
-            >
-              <TimelinePicture
-                imgSrc={SelfLearningPicture}
-                alt="selfLearning"
-              />
-            </TimelineOppositeContent>
-            <TimelineSeparator sx={isMobile ? { display: "none" } : {}}>
-              <TimelineConnector />
-              <TimelineDot color="secondary">
-                <FilterVintageRoundedIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" align="center" pb={1}>
-                Self-learning
-              </Typography>
-              <Typography>
-                I am actively enhancing my programming skills through online
-                courses and hands-on project creation.
-              </Typography>
-              <Divider sx={{ py: 1 }} />
-              <Typography align="center" sx={{ fontWeight: "bold", pt: 1.5 }}>
-                Courses
-              </Typography>
-              <List sx={{ py: 0 }}>
-                <ListItem sx={{ py: 0 }}>
-                  <ListItemText primary="SQL Course - University of Waterloo" />
-                </ListItem>
-                <ListItem sx={{ py: 0 }}>
-                  <ListItemText primary="The Complete Javascript course - Udemy" />
-                </ListItem>
-                <ListItem sx={{ py: 0 }}>
-                  <ListItemText primary="Complete React Developer - Udemy" />
-                </ListItem>
-              </List>
-              <Typography align="center" sx={{ pt: 1.5, fontWeight: "bold" }}>
-                Projects
-              </Typography>
-              <List sx={{ py: 0 }}>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <Fragment>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://stacy-clothing.netlify.app/"
-                        sx={{ mr: 0.5 }}
-                      >
-                        <LanguageIcon />
-                      </IconButton>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://github.com/ALagodzinska/Crown-Clothing"
-                      >
-                        <GitHubIcon />
-                      </IconButton>
-                    </Fragment>
-                  }
-                >
-                  <ListItemText primary="Crown Clothing Website" />
-                </ListItem>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <Fragment>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://forkify-recipes-stacy.netlify.app/"
-                        sx={{ mr: 0.5 }}
-                      >
-                        <LanguageIcon />
-                      </IconButton>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://github.com/ALagodzinska/Forkify"
-                      >
-                        <GitHubIcon />
-                      </IconButton>
-                    </Fragment>
-                  }
-                >
-                  <ListItemText primary="Forkify Recipe App" />
-                </ListItem>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <Fragment>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://alagodzinska.github.io/MaptyApp/"
-                        sx={{ mr: 0.5 }}
-                      >
-                        <LanguageIcon />
-                      </IconButton>
-                      <IconButton
-                        edge="end"
-                        aria-label="github"
-                        href="https://github.com/ALagodzinska/MaptyApp"
-                      >
-                        <GitHubIcon />
-                      </IconButton>
-                    </Fragment>
-                  }
-                >
-                  <ListItemText primary="Mapty Workouts Tracking" />
-                </ListItem>
-              </List>
-            </TimelineContent>
-          </TimelineItem>
+          <TimelineElement item={selfLearningItem} />
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
@@ -199,39 +140,7 @@ const TimelineJourney = () => {
                 acquired and put into practice code design principles while
                 developing these projects.
               </Typography>
-              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
-                Projects
-              </Typography>
-              <List sx={{ py: 0 }}>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <IconButton
-                      edge="end"
-                      aria-label="github"
-                      href="https://github.com/ALagodzinska/ConwaysGameOfLife"
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText primary="Conways Game Of Life" />
-                </ListItem>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <IconButton
-                      edge="end"
-                      aria-label="github"
-                      href="https://github.com/ALagodzinska/Savanna-Game"
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText primary="Savanna Game" />
-                </ListItem>
-              </List>
+              <ProjectList projects={accentureInternshipProjects} />
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -264,25 +173,7 @@ const TimelineJourney = () => {
                 collaborated on a Real-Time Chat Application project using C#,
                 MVC, and SignalR, successfully deploying it to Azure Cloud.
               </Typography>
-              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
-                Projects
-              </Typography>
-              <List sx={{ py: 0 }}>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <IconButton
-                      edge="end"
-                      aria-label="github"
-                      href="https://github.com/ALagodzinska/ChatApp"
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText primary="Hermes Chat App" />
-                </ListItem>
-              </List>
+              <ProjectList projects={accentureBootcampProjects} />
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -319,25 +210,7 @@ const TimelineJourney = () => {
                 various console applications and developed a web application
                 using the MVC pattern.
               </Typography>
-              <Typography align="center" sx={{ pt: 1, fontWeight: "bold" }}>
-                Projects
-              </Typography>
-              <List sx={{ py: 0 }}>
-                <ListItem
-                  sx={{ py: 0 }}
-                  secondaryAction={
-                    <IconButton
-                      edge="end"
-                      aria-label="github"
-                      href="https://github.com/ALagodzinska/StudentsAttendanceManagementApp"
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText primary="Attendance Management Application" />
-                </ListItem>
-              </List>
+              <ProjectList projects={sheGoesTechProjects} />
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>

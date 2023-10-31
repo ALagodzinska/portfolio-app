@@ -17,7 +17,9 @@ const TimelineElement = ({ item, direction }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <TimelineItem sx={isMobile ? { flexDirection: "column" } : {}}>
+    <TimelineItem
+      sx={isMobile ? { flexDirection: "column !important", pt: 6 } : {}}
+    >
       <TimelineOppositeContent
         variant="body2"
         color="text.secondary"

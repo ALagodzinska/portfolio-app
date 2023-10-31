@@ -8,7 +8,7 @@ const TimelineJourney = () => {
     <Box sx={{ pt: { xs: "40px", md: "130px" } }}>
       <Typography
         align="center"
-        sx={{ py: 5, typography: { xs: "h3", md: "h2" } }}
+        sx={{ pt: 5, typography: { xs: "h3", md: "h2" } }}
       >
         PROFESSIONAL JOURNEY
       </Typography>

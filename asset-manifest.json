@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.b4058c64.css",
-    "main.js": "/portfolio-app/static/js/main.8bdfbeec.js",
+    "main.js": "/portfolio-app/static/js/main.951d14e6.js",
     "static/media/portfolio-pic.png": "/portfolio-app/static/media/portfolio-pic.ecc27eaebb4fb1725697.png",
     "static/media/Lagodzinska_Resume.pdf": "/portfolio-app/static/media/Lagodzinska_Resume.45a7d8c73d6393583fd4.pdf",
     "static/media/cwn-clothing.png": "/portfolio-app/static/media/cwn-clothing.bf6d3044e9f33dba059b.png",
@@ -10,6 +10,7 @@
     "static/media/mapty.jpg": "/portfolio-app/static/media/mapty.94b4bb44736265b09158.jpg",
     "static/media/gameOfLife.jpg": "/portfolio-app/static/media/gameOfLife.f39f4c69a0267e21605f.jpg",
     "static/media/rtu-logo.png": "/portfolio-app/static/media/rtu-logo.7236e82f6ecaea3c4370.png",
+    "static/media/nature.png": "/portfolio-app/static/media/nature.94037b6089af0cc07379.png",
     "static/media/self-learning.png": "/portfolio-app/static/media/self-learning.a72cc4d707e5b205d502.png",
     "static/media/accenture-logo.jpg": "/portfolio-app/static/media/accenture-logo.1afe12cc0058b8abef61.jpg",
     "static/media/roboto-latin-500-normal.woff2": "/portfolio-app/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -71,10 +72,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio-app/index.html",
     "main.b4058c64.css.map": "/portfolio-app/static/css/main.b4058c64.css.map",
-    "main.8bdfbeec.js.map": "/portfolio-app/static/js/main.8bdfbeec.js.map"
+    "main.951d14e6.js.map": "/portfolio-app/static/js/main.951d14e6.js.map"
   },
   "entrypoints": [
     "static/css/main.b4058c64.css",
-    "static/js/main.8bdfbeec.js"
+    "static/js/main.951d14e6.js"
   ]
 }

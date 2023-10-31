@@ -32,7 +32,7 @@ const Projects = () => {
         sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
         <Grid container spacing={2}>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
                 height: "100%",
@@ -87,7 +87,7 @@ const Projects = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
                 height: "100%",
@@ -136,7 +136,7 @@ const Projects = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
                 height: "100%",
@@ -184,7 +184,7 @@ const Projects = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
             <Card
               sx={{
                 height: "100%",
@@ -240,7 +240,7 @@ const Projects = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item sm={12} md={6}>
             <Card
               sx={{
                 height: "100%",

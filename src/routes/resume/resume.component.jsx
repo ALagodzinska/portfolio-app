@@ -32,6 +32,7 @@ const Resume = () => {
           sx={{
             display: "flex",
             alignItems: "center",
+            textAlign: "center",
             justifyContent: "center",
             mx: "20%",
             height: "4rem",

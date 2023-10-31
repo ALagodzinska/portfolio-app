@@ -1,5 +1,5 @@
 import Timeline from "@mui/lab/Timeline";
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import TimelineElement from "../../components/timeline-item/timeline-item.component";
 import * as itemConstants from "../../constants/timeline-item.constants.js";
 

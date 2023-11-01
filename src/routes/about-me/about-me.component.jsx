@@ -39,7 +39,7 @@ const AboutMe = () => {
         <Grid item md={6}>
           <Typography
             fontSize={{ xs: "16px", sm: "20px" }}
-            sx={{ pb: { xs: 1, sm: 2 } }}
+            sx={{ pb: { xs: 1, sm: 2 }, px: { xs: 2, sm: 0 } }}
           >
             My journey into the world of software development began
             independently by learning online with a hunger for knowledge and a
@@ -47,14 +47,17 @@ const AboutMe = () => {
           </Typography>
           <Typography
             fontSize={{ xs: "16px", sm: "20px" }}
-            sx={{ pb: { xs: 1, sm: 2 } }}
+            sx={{ pb: { xs: 1, sm: 2 }, px: { xs: 2, sm: 0 } }}
           >
             I'm dedicated to continuous learning, always seeking new
             possibilities to expand my skills. I love the opportunity to solve
             puzzles and find efficient, creative solutions to real-world
             problems.
           </Typography>
-          <Typography fontSize={{ xs: "16px", sm: "20px" }}>
+          <Typography
+            fontSize={{ xs: "16px", sm: "20px" }}
+            sx={{ px: { xs: 2, sm: 0 } }}
+          >
             Feel free to explore my portfolio and see how my passion for coding
             comes to life through my projects.
           </Typography>

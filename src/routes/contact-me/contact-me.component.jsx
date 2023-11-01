@@ -10,7 +10,7 @@ const ContactMe = () => {
     >
       <Typography
         align="center"
-        sx={{ py: 5, typography: { xs: "h3", md: "h2" } }}
+        sx={{ py: 5, typography: { xs: "h4", md: "h2" } }}
       >
         CONTACT ME
       </Typography>

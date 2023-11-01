@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.b4058c64.css",
-    "main.js": "/portfolio-app/static/js/main.951d14e6.js",
+    "main.js": "/portfolio-app/static/js/main.149e9ca8.js",
     "static/media/portfolio-pic.png": "/portfolio-app/static/media/portfolio-pic.ecc27eaebb4fb1725697.png",
     "static/media/Lagodzinska_Resume.pdf": "/portfolio-app/static/media/Lagodzinska_Resume.45a7d8c73d6393583fd4.pdf",
     "static/media/cwn-clothing.png": "/portfolio-app/static/media/cwn-clothing.bf6d3044e9f33dba059b.png",
@@ -72,10 +72,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio-app/index.html",
     "main.b4058c64.css.map": "/portfolio-app/static/css/main.b4058c64.css.map",
-    "main.951d14e6.js.map": "/portfolio-app/static/js/main.951d14e6.js.map"
+    "main.149e9ca8.js.map": "/portfolio-app/static/js/main.149e9ca8.js.map"
   },
   "entrypoints": [
     "static/css/main.b4058c64.css",
-    "static/js/main.951d14e6.js"
+    "static/js/main.149e9ca8.js"
   ]
 }

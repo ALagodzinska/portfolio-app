@@ -1,6 +1,6 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Fragment } from "react";
-import MyPhoto from "../../pictures/portfolio-pic.png";
+import MyPhoto from "../../pictures/portfolio-pic.jpg";
 import {
   CsharpIcon,
   JavaScriptIcon,

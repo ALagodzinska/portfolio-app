@@ -2,9 +2,19 @@ import AccentureBootcampIcon from "../pictures/accenture-bootcamp-logo.jpg";
 import AccentureIcon from "../pictures/accenture-logo.jpg";
 import RtuLogo from "../pictures/rtu-logo.png";
 import SelfLearningPicture from "../pictures/self-learning.png";
+import UBCLogo from "../pictures/ubc-logo.png";
 import SheGoesTechIcon from "../pictures/sgt-logo.jpg";
 
 import * as projectCourseConstants from "../constants/projects-courses.constants";
+
+export const ubcItem = {
+  image: UBCLogo,
+  title: "Bachelor's in Computer Science",
+  place: "The University of British Columbia",
+  description:
+    "I’m currently pursuing a second degree in Computer Science, enjoying the challenge of learning something new every day, and exploring co-op opportunities.",
+  projects: projectCourseConstants.ubcProjectsList,
+};
 
 export const selfLearningItem = {
   image: SelfLearningPicture,

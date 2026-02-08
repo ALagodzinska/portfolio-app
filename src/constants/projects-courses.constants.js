@@ -4,6 +4,19 @@ export const courseList = [
   "Complete React Developer - Udemy",
 ];
 
+export const ubcProjectsList = [
+  {
+    title: "Cake Rush - Memory Game (CPSC 210)",
+    githubLink: "https://github.com/ALagodzinska/CakeRush",
+  },
+  {
+    title: "Game Server Playtime Prediction Model (DCSI 100)",
+  },
+  {
+    title: "Major Course Planner (HackCamp 2025)",
+  },
+];
+
 export const selfLearningProjectList = [
   {
     title: "Crown Clothing Website",

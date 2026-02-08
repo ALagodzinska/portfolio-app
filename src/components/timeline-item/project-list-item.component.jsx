@@ -19,9 +19,15 @@ const ProjectListItem = ({ project }) => {
               <LanguageIcon />
             </IconButton>
           )}
-          <IconButton edge="end" aria-label="github" href={project.githubLink}>
-            <GitHubIcon />
-          </IconButton>
+          {project.githubLink && (
+            <IconButton
+              edge="end"
+              aria-label="github"
+              href={project.githubLink}
+            >
+              <GitHubIcon />
+            </IconButton>
+          )}
         </Fragment>
       }
     >

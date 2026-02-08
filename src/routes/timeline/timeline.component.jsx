@@ -18,6 +18,7 @@ const TimelineJourney = () => {
         sx={{ pb: 2, maxWidth: "750px", mx: "auto" }}
       >
         <Timeline position="alternate">
+          <TimelineElement item={itemConstants.ubcItem} />
           <TimelineElement item={itemConstants.selfLearningItem} />
           <TimelineElement
             item={itemConstants.accentureItem}

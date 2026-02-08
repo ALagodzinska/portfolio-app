@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.b4058c64.css",
-    "main.js": "/portfolio-app/static/js/main.c8692311.js",
+    "main.js": "/portfolio-app/static/js/main.0ec52d4d.js",
     "static/media/Lagodzinska_Resume.pdf": "/portfolio-app/static/media/Lagodzinska_Resume.45a7d8c73d6393583fd4.pdf",
     "static/media/cwn-clothing.png": "/portfolio-app/static/media/cwn-clothing.bf6d3044e9f33dba059b.png",
     "static/media/hermesChat.png": "/portfolio-app/static/media/hermesChat.655bcf17440bd63b75c4.png",
@@ -13,6 +13,7 @@
     "static/media/nature.png": "/portfolio-app/static/media/nature.94037b6089af0cc07379.png",
     "static/media/self-learning.png": "/portfolio-app/static/media/self-learning.a72cc4d707e5b205d502.png",
     "static/media/accenture-logo.jpg": "/portfolio-app/static/media/accenture-logo.1afe12cc0058b8abef61.jpg",
+    "static/media/ubc-logo.png": "/portfolio-app/static/media/ubc-logo.38b92b5a17f5e5cb3287.png",
     "static/media/roboto-latin-500-normal.woff2": "/portfolio-app/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/portfolio-app/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/portfolio-app/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -72,10 +73,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio-app/index.html",
     "main.b4058c64.css.map": "/portfolio-app/static/css/main.b4058c64.css.map",
-    "main.c8692311.js.map": "/portfolio-app/static/js/main.c8692311.js.map"
+    "main.0ec52d4d.js.map": "/portfolio-app/static/js/main.0ec52d4d.js.map"
   },
   "entrypoints": [
     "static/css/main.b4058c64.css",
-    "static/js/main.c8692311.js"
+    "static/js/main.0ec52d4d.js"
   ]
 }

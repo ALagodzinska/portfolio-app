@@ -19,17 +19,17 @@ const TimelineJourney = () => {
       >
         <Timeline position="alternate">
           <TimelineElement item={itemConstants.ubcItem} />
-          <TimelineElement item={itemConstants.selfLearningItem} />
           <TimelineElement
-            item={itemConstants.accentureItem}
+            item={itemConstants.selfLearningItem}
             direction={"right"}
           />
-          <TimelineElement item={itemConstants.bootcampItem} />
+          <TimelineElement item={itemConstants.accentureItem} />
           <TimelineElement
-            item={itemConstants.sheGoesTechItem}
+            item={itemConstants.bootcampItem}
             direction={"right"}
           />
-          <TimelineElement item={itemConstants.RTUItem} />
+          <TimelineElement item={itemConstants.sheGoesTechItem} />
+          <TimelineElement item={itemConstants.RTUItem} direction={"right"} />
         </Timeline>
       </Box>
     </Box>

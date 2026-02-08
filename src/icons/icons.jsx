@@ -275,3 +275,109 @@ export const AzureIcon = () => {
     </SvgIcon>
   );
 };
+
+export const JavaIcon = () => {
+  return (
+    <SvgIcon>
+      <svg viewBox="0 0 128 128">
+        <path
+          fill="#5382A1"
+          d="M63.2 96.2c-22.6 0-41-3.5-41-8s18.4-8 41-8 41 3.5 41 8-18.4 8-41 8z"
+        />
+        <path
+          fill="#E76F00"
+          d="M46.6 73.8s-5.5 3.2 3.9 4.3c11.4 1.3 17.2 1.1 29.8-1.3 0 0 3.3 2.1 8 3.9-28.5 12.2-64.6-.7-41.7-6.9z"
+        />
+        <path
+          fill="#E76F00"
+          d="M43.1 57.9s-6.2 4.6 3.2 5.6c12.1 1.3 21.7 1.4 38.2-1.8 0 0 2.3 2.3 5.9 3.6-33.9 9.9-71.8.8-47.3-7.4z"
+        />
+        <path
+          fill="#5382A1"
+          d="M71.9 16.5c6.8 7.9-1.8 15-1.8 15s17.1-8.8 9.2-19.9c-7.4-10.5-13-15.7 17.5-33.6 0 0-47.9 12-24.9 38.5z"
+        />
+        <path
+          fill="#5382A1"
+          d="M58.3 28.6c-8.6 6.4-3.1 12.1-3.1 12.1s-10.4-5.4-5.6-12.2c4.5-6.4 15.9-9.6-3.1-21.7 0 0 28.9 7.6 11.8 21.8z"
+        />
+      </svg>
+    </SvgIcon>
+  );
+};
+
+export const RIcon = () => {
+  return (
+    <SvgIcon>
+      <svg viewBox="0 0 128 128">
+        {/* Outer ellipse */}
+        <ellipse cx="64" cy="64" rx="60" ry="40" fill="#276DC3" />
+
+        {/* Inner ellipse */}
+        <ellipse cx="64" cy="64" rx="45" ry="30" fill="#FFFFFF" />
+
+        {/* R letter */}
+        <path
+          fill="#276DC3"
+          d="M55 50h18c7.5 0 13 4 13 10 0 5.4-4.1 9.2-10.2 9.8l10.6 15H74.8l-9.6-14H63v14H55V50zm8 7v11h8.7c4 0 6.4-2.1 6.4-5.5 0-3.4-2.4-5.5-6.4-5.5H63z"
+        />
+      </svg>
+    </SvgIcon>
+  );
+};
+
+export const CppIcon = () => {
+  return (
+    <SvgIcon>
+      <svg viewBox="0 0 128 128">
+        {/* Hexagon background */}
+        <path fill="#00599C" d="M64 4l52 30v60l-52 30L12 94V34z" />
+
+        {/* C++ text */}
+        <path
+          fill="#FFFFFF"
+          d="M50 48c-9.9 0-18 7.6-18 16s8.1 16 18 16c6.2 0 11.6-2.7 14.8-6.8l-6.4-3.7c-1.7 2.1-4.6 3.6-8.4 3.6-5.8 0-10.4-4-10.4-9.1s4.6-9.1 10.4-9.1c3.8 0 6.7 1.5 8.4 3.6l6.4-3.7C61.6 50.7 56.2 48 50 48z"
+        />
+        <rect x="72" y="54" width="6" height="20" fill="#FFFFFF" />
+        <rect x="82" y="54" width="6" height="20" fill="#FFFFFF" />
+        <rect x="68" y="62" width="20" height="6" fill="#FFFFFF" />
+        <rect x="78" y="62" width="20" height="6" fill="#FFFFFF" />
+      </svg>
+    </SvgIcon>
+  );
+};
+
+export const JupyterIcon = () => {
+  return (
+    <SvgIcon>
+      <svg viewBox="0 0 128 128">
+        {/* Top orange ring */}
+        <ellipse
+          cx="64"
+          cy="42"
+          rx="44"
+          ry="18"
+          fill="none"
+          stroke="#F37726"
+          strokeWidth="8"
+        />
+
+        {/* Bottom orange ring */}
+        <ellipse
+          cx="64"
+          cy="86"
+          rx="44"
+          ry="18"
+          fill="none"
+          stroke="#F37726"
+          strokeWidth="8"
+        />
+
+        {/* Grey dots */}
+        <circle cx="30" cy="28" r="4" fill="#9E9E9E" />
+        <circle cx="98" cy="28" r="4" fill="#9E9E9E" />
+        <circle cx="30" cy="100" r="4" fill="#9E9E9E" />
+        <circle cx="98" cy="100" r="4" fill="#9E9E9E" />
+      </svg>
+    </SvgIcon>
+  );
+};

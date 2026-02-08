@@ -14,6 +14,10 @@ import {
   GitIcon,
   NpmIcon,
   AzureIcon,
+  JavaIcon,
+  RIcon,
+  CppIcon,
+  JupyterIcon,
 } from "../../icons/icons";
 
 const AboutMe = () => {
@@ -78,8 +82,11 @@ const AboutMe = () => {
           >
             <Typography variant="overline">Programming Languages:</Typography>
             <Stack direction={"row"} spacing={1}>
+              <JavaIcon />
+              <RIcon />
               <CsharpIcon />
               <JavaScriptIcon />
+              <CppIcon />
               <HtmlIcon />
               <CssIcon />
               <SqlIcon />
@@ -99,6 +106,7 @@ const AboutMe = () => {
               <VSIcon />
               <GitIcon />
               <NpmIcon />
+              <JupyterIcon />
               <AzureIcon />
             </Stack>
           </Stack>

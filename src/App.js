@@ -34,7 +34,7 @@ function App() {
         </Box>
       </Box>
       <Box sx={{ borderTop: "solid 1px gray", py: 2, pl: 1 }}>
-        ⓒ 2023, Anastasija Lagodzinska
+        ⓒ 2026, Anastasija Lagodzinska
       </Box>
     </Container>
   );

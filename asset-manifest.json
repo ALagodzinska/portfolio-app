@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.b4058c64.css",
-    "main.js": "/portfolio-app/static/js/main.7294e115.js",
+    "main.js": "/portfolio-app/static/js/main.11461e24.js",
     "static/media/Lagodzinska_Resume.pdf": "/portfolio-app/static/media/Lagodzinska_Resume.cffb8224b37b56980a6c.pdf",
     "static/media/cwn-clothing.png": "/portfolio-app/static/media/cwn-clothing.bf6d3044e9f33dba059b.png",
+    "static/media/portfolio-pic.png": "/portfolio-app/static/media/portfolio-pic.fcccc31c856314adf377.png",
     "static/media/workoutApp.png": "/portfolio-app/static/media/workoutApp.024f9c93b5886e583717.png",
     "static/media/hermesChat.png": "/portfolio-app/static/media/hermesChat.655bcf17440bd63b75c4.png",
     "static/media/cakeRush.png": "/portfolio-app/static/media/cakeRush.70d1e79971de452e2045.png",
     "static/media/forkify.jpg": "/portfolio-app/static/media/forkify.dfdfdaa6e65bf5d69f0f.jpg",
     "static/media/mapty.jpg": "/portfolio-app/static/media/mapty.94b4bb44736265b09158.jpg",
     "static/media/gameOfLife.jpg": "/portfolio-app/static/media/gameOfLife.f39f4c69a0267e21605f.jpg",
-    "static/media/portfolio-pic.jpg": "/portfolio-app/static/media/portfolio-pic.157cbb0ccc602b712a86.jpg",
     "static/media/rtu-logo.png": "/portfolio-app/static/media/rtu-logo.7236e82f6ecaea3c4370.png",
     "static/media/nature.png": "/portfolio-app/static/media/nature.94037b6089af0cc07379.png",
     "static/media/self-learning.png": "/portfolio-app/static/media/self-learning.a72cc4d707e5b205d502.png",
@@ -75,10 +75,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-app/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio-app/index.html",
     "main.b4058c64.css.map": "/portfolio-app/static/css/main.b4058c64.css.map",
-    "main.7294e115.js.map": "/portfolio-app/static/js/main.7294e115.js.map"
+    "main.11461e24.js.map": "/portfolio-app/static/js/main.11461e24.js.map"
   },
   "entrypoints": [
     "static/css/main.b4058c64.css",
-    "static/js/main.7294e115.js"
+    "static/js/main.11461e24.js"
   ]
 }

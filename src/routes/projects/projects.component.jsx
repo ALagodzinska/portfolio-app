@@ -24,6 +24,7 @@ import HermesChat from "../../pictures/hermesChat.png";
 import Mapty from "../../pictures/mapty.jpg";
 import WorkoutApp from "../../pictures/workoutApp.png";
 import CakeRush from "../../pictures/cakeRush.png";
+import Blog from "../../pictures/blog.png";
 
 const cardSx = {
   height: "100%",
@@ -97,6 +98,14 @@ const Projects = () => {
       image: CakeRush,
       imageTitle: "Cake Rush",
       github: "https://github.com/ALagodzinska/CakeRush",
+    },
+    {
+      title: "Personal Blog Website",
+      desc: "C# ASP.NET Core Web API backend and a React-based frontend web app.",
+      tech: "C#, ASP.NET Core, React",
+      image: Blog,
+      imageTitle: "Personal Blog",
+      github: "https://github.com/ALagodzinska/BlogReact",
     },
     {
       title: "Console Game",
